@@ -1,7 +1,12 @@
 import server from './src/server.js'
+import { conn } from './src/db.js'
 
 const PORT = 3001
 
-server.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`)
-})
+conn.sync({ force: true })
+    .then(() => {
+        server.listen(PORT, () => {
+            console.log(`Server listening on port ${PORT}`)
+        })
+    })
+    .catch((error) => console.error(error))
