@@ -5,7 +5,7 @@ como en las peliculas.
 
 Va a permitir buscar a los personajes por nombre, casa , estado actual y otros filtros, ver el detalle especifico de cada uno.
 
-Las tecnologias practicas acá son:
+Las tecnologias practicadas son:
 
 React,Tailwind,TypeScript
 
