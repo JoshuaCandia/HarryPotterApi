@@ -1,21 +1,14 @@
-import { useState } from 'react'
-
 import './App.css'
+import logo from './assets/png/logo-png.png'
 
+//components
+import Home from './views/Home'
+import CardsContainer from './components/CardsContainer'
 function App() {
-    const [count, setCount] = useState(0)
-
-    const changeCount = () => {
-        setCount('2')
-    }
-
     return (
-        <div className='bg-gray-800 text-white  flex flex-col gap-4 justify-center items-center w-screen h-screen'>
-            <h1 className='text-3xl'>HP API</h1>
-            <button className='text-xl bg-blue-500 p-2 rounded-md' onClick={changeCount}>
-                Click Me
-            </button>
-            <span>{count}</span>
+        <div className='bg-black text-white  flex flex-col pt-4 gap-4 justify-start items-center h-[100%] h-screen'>
+            <img className='w-1/2' src={logo} alt='' />
+            <CardsContainer />
         </div>
     )
 }
