@@ -12,6 +12,18 @@ const getAllCharController = async () => {
                 alternate_names: character.alternate_names,
                 species: character.species,
                 gender: character.gender,
+                house: character.house,
+                dateOfBirth: character.dateOfBirth,
+                yearOfBirth: character.yearOfBirth,
+                eyeColour: character.eyeColour,
+                hairColour: character.hairColour,
+                wand: character.wand,
+                wizard: character.wizard,
+                patronus: character.patronus,
+                actor: character.actor,
+                alive: character.alive,
+                image: character.image,
+                ancestry: character.ancestry,
             }
         })
         for (const character of dataMapped) {

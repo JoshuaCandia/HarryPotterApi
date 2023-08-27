@@ -1,9 +1,10 @@
-import { useState } from 'react'
-
+import CardProtas from '../components/card-protas/CardProtas'
+import logo from '../assets/png/logo-png.png'
 const Home = () => {
     return (
-        <div className='h-screen w-screen flex justify-center items-center relative'>
-            <div></div>
+        <div className=' flex flex-col justify-center items-center relative'>
+            <img src={logo} alt='logo' />
+            <CardProtas />
         </div>
     )
 }
