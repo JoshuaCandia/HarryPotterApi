@@ -4,6 +4,12 @@ export default {
     theme: {
         darkMode: 'class',
         extend: {
+            colors: {
+                griffyndor: '#a6332e',
+                hufflepuff: '#efbc2f',
+                ravenclaw: '#3c4e91',
+                slytherin: '#366447',
+            },
             boxShadow: {
                 'outline-yellow': '0 0 20px 6px rgba(255, 255, 0, 0.5)',
             },

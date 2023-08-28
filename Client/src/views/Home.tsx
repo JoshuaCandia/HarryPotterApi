@@ -1,5 +1,6 @@
 import CardProtas from '../components/card-protas/CardProtas'
 import { motion } from 'framer-motion'
+
 const Home = () => {
     const homeVariants = {
         hidden: { opacity: 0, scale: 0.8 },
@@ -10,7 +11,7 @@ const Home = () => {
             initial='hidden'
             animate='visible'
             variants={homeVariants}
-            className=' flex flex-col justify-center items-center relative'
+            className='bg-slytherin w-full h-screen flex flex-col justify-center items-center relative'
         >
             <CardProtas />
         </motion.div>
