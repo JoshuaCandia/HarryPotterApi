@@ -1,4 +1,4 @@
-import CardProtas from '../components/card-protas/CardProtas'
+import CardProtas from '../../components/card-protas/hufflepuff/CardProtas'
 import { motion } from 'framer-motion'
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
             initial='hidden'
             animate='visible'
             variants={homeVariants}
-            className='bg-slytherin w-full h-screen flex flex-col justify-center items-center relative'
+            className='bg-griffyndor w-full h-screen flex flex-col justify-center items-center relative'
         >
             <CardProtas />
         </motion.div>
