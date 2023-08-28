@@ -1,15 +1,19 @@
 import './App.css'
-import CardsContainer from './components/CardsContainer'
+// Import Hooks
 
-//components
+import { Route, Routes } from 'react-router-dom'
+
+//views
+import Landing from './views/Landing'
 import Home from './views/Home'
 
 function App() {
     return (
-        <div className='bg-black text-white  flex flex-col justify-center pt-4 gap-4 justify-start items-center h-[100vh] '>
-            <Home />
-
-            <CardsContainer />
+        <div className='text-white flex flex-col justify-start pt-4 gap-4 justify-start items-center min-h-[100vh] '>
+            <Routes>
+                <Route path='/' element={<Landing />} />
+                <Route path='/home' element={<Home />} />
+            </Routes>
         </div>
     )
 }

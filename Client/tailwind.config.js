@@ -2,7 +2,11 @@
 export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
+        darkMode: 'class',
         extend: {
+            boxShadow: {
+                'outline-yellow': '0 0 20px 6px rgba(255, 255, 0, 0.5)',
+            },
             fontFamily: {
                 // main font
                 poppins: ['Poppins', 'sans-serif'],
@@ -24,5 +28,5 @@ export default {
             },
         },
     },
-    plugins: [],
+    plugins: ['tailwindcss-animated'],
 }

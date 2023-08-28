@@ -1,11 +1,19 @@
 import CardProtas from '../components/card-protas/CardProtas'
-import logo from '../assets/png/logo-png.png'
+import { motion } from 'framer-motion'
 const Home = () => {
+    const homeVariants = {
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
+    }
     return (
-        <div className=' flex flex-col justify-center items-center relative'>
-            <img src={logo} alt='logo' />
+        <motion.div
+            initial='hidden'
+            animate='visible'
+            variants={homeVariants}
+            className=' flex flex-col justify-center items-center relative'
+        >
             <CardProtas />
-        </div>
+        </motion.div>
     )
 }
 
