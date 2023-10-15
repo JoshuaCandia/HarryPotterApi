@@ -1,6 +1,6 @@
 # Harry Potter API
 
-Este proyecto busca mostrar a los fans de HP cada personaje que salen tanto en los libros
+Este proyecto busca mostrar a los fans de HP cada personaje que aparece tanto en los libros
 como en las peliculas.
 
 Va a permitir buscar a los personajes por nombre, casa , estado actual y otros filtros, ver el detalle especifico de cada uno.
